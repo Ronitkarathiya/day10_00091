@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>java script location</title>
+</head>
+<body>
+   <h1>java script window location</h1> 
+   <p id="demo"></p>
+   <p id="demo1"></p>
+   <p id="demo2"></p>
+   <p id="demo3"></p>
+   <p id="demo4"></p>
+   <script>
+    document.getElementById("demo").innerHTML=
+    "the full url of this page is :<br>" +window.location.href;
+    document.getElementById("demo1").innerHTML=
+    "page host name is:" +window.location.hostname;
+    document.getElementById("demo2").innerHTML=
+    "page path is:" +window.location.pathname;
+    document.getElementById("demo3").innerHTML=
+    "page protocol is:" +window.location.protocol;
+    document.getElementById("demo4").innerHTML=
+    "port number is:" +window.location.port; 
+   </script>
+</body>
+</html>
