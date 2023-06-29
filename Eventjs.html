@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <script type = "text/javascript">
+            <!--
+               function over() {
+                  document.write ("Mouse Over");
+               }            
+               function out() {
+                  document.write ("Mouse Out");
+               }            
+            //-->
+         </script>  
+    </head>
+<body>
+
+<button onclick="document.getElementById('demo').innerHTML=Date()">The time is?</button>
+
+<p id="demo"></p>
+
+    <p2>Bring your mouse inside the division to see the result:</p2>      
+    <div onmouseover = "over()" onmouseout = "out()">
+       <h2> This is inside the division </h2>
+    </div>
+    <p>Assign an "onended" event to an audio element.</p>
+
+    <p>Press play and wait for the audio to end.</p>
+
+         <audio controls onended="myFunction()">
+         <source src="horse.ogg" type="audio/ogg">
+         <source src="horse.mp3" type="audio/mpeg">
+         Your browser does not support the audio element.
+         </audio>
+
+
+
+    <script>
+       function myFunction() {
+       document.getElementById("demo").innerHTML = "The video has ended";
+       }
+    </script>
+ 
+     
+</body>
+</html>
