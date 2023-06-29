@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>my windows</title>
+</head>
+<body>
+    <h1>the wimdow object</h1>
+    <h2>java script window</h2>
+    <p id="BOM"></p>
+    <script>
+        document.getElementById("bom").innerHTML=
+        "browser inner window width: "+ window.innerWidth +"px<br>"
+        "browser inner window height:"+ window.innerHeight +"px";
+    </script>
+    <h2>the open() methods</h2>
+    <p>click the button to open the new browser window</p>
+    <button onclick="myfunction()">try it</button>
+    <script>
+        function myfunction() {
+            window.open("https://www.w3schools.com/jsref/event_onmessage_sse.asp");
+        }
+    </script>
+     <h2>the open() and close() methods</h2>
+     <button onclick="openwin()">open my window</button>
+     <button onclick="closewin()">close my window</button>
+     <button onclick="resizewin()">resize the window</button>
+     <script>
+        let mywindow;
+        function openwin() {
+            mywindow=window.open("","","width=200,height=300");
+        }
+        function closewin(){
+            mywindow.close();
+        }
+        function resizewin(){
+            mywindow.resizeto(500,900);
+        }
+     </script>
+</body>
+</html>
